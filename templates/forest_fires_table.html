@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; border-bottom:3px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; font-weight:bold; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      th.style1 { vertical-align:bottom; border-bottom:3px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; font-weight:bold; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      td.style2 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      th.style2 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      td.style3 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      th.style3 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      td.style4 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      th.style4 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      td.style5 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      th.style5 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      td.style6 { vertical-align:bottom; border-bottom:3px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      th.style6 { vertical-align:bottom; border-bottom:3px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      td.style7 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; font-weight:bold; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      th.style7 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:1px solid #DDDDDD !important; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; font-weight:bold; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#FFFFFF }
+      td.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:white }
+      th.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:white }
+      td.style9 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:none #000000; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      th.style9 { vertical-align:bottom; border-bottom:1px solid #DDDDDD !important; border-top:none #000000; border-left:1px solid #DDDDDD !important; border-right:1px solid #DDDDDD !important; color:#000000; font-family:'Source Sans Pro'; font-size:12pt; background-color:#F9F9F9 }
+      table.sheet0 col.col0 { width:82.01111017pt }
+      table.sheet0 col.col1 { width:107.08888766pt }
+      table.sheet0 col.col2 { width:88.1111101pt }
+      table.sheet0 col.col3 { width:92.85555449pt }
+      table.sheet0 col.col4 { width:109.12222097pt }
+      table.sheet0 col.col5 { width:145.04444278pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row3 { height:47.25pt }
+      table.sheet0 tr.row4 { height:31.5pt }
+      table.sheet0 tr.row5 { height:31.5pt }
+      table.sheet0 tr.row6 { height:63pt }
+      table.sheet0 tr.row11 { height:47.25pt }
+      table.sheet0 tr.row12 { height:31.5pt }
+      table.sheet0 tr.row16 { height:31.5pt }
+      table.sheet0 tr.row20 { height:31.5pt }
+      table.sheet0 tr.row21 { height:31.5pt }
+      table.sheet0 tr.row22 { height:63pt }
+      table.sheet0 tr.row23 { height:31.5pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <col class="col5">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style2 s">Incident</td>
+            <td class="column1 style1 s">Type</td>
+            <td class="column2 style6 s">Arizona, USA</td>
+            <td class="column3 style1 s">Size</td>
+            <td class="column4 style1 s">Updated</td>
+            <td class="column5 style1 s">Coordinates</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6651/" title="">Martinez 3 Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style2 s">Arizona, USA</td>
+            <td class="column3 style2 s">52 Acres</td>
+            <td class="column4 style2 s">12 hrs. ago</td>
+            <td class="column5 style8 s">33.64  , -116.142  </td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6657/" title="">Hillside Fire</a></td>
+            <td class="column1 style3 s">Wildfire</td>
+            <td class="column2 style2 s">Arizona, USA</td>
+            <td class="column3 style3 s">200 Acres</td>
+            <td class="column4 style3 s">14 hrs. ago</td>
+            <td class="column5 style8 s">34.183  , -117.285  </td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6604/" title="">2019 Fall Rx Burns for Flagstaff Dist.</a></td>
+            <td class="column1 style2 s">Prescribed Fire</td>
+            <td class="column2 style3 s">Arizona, USA</td>
+            <td class="column3 style2 s">0 Acres</td>
+            <td class="column4 style2 s">2 days ago</td>
+            <td class="column5 style8 s">35.113  , -111.71  </td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6299/" title="">2019 Malheur NF Prescribed Fire</a></td>
+            <td class="column1 style3 s">Prescribed Fire</td>
+            <td class="column2 style3 s">Arizona, USA</td>
+            <td class="column3 style3 s">0 Acres</td>
+            <td class="column4 style3 s">2 days ago</td>
+            <td class="column5 style8 s">44.418  , -118.951  </td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/5922/" title="">Kaibab NF South Zone Rx Fire</a></td>
+            <td class="column1 style2 s">Prescribed Fire</td>
+            <td class="column2 style3 s">Arizona, USA</td>
+            <td class="column3 style2 s">5000 Acres</td>
+            <td class="column4 style2 s">3 days ago</td>
+            <td class="column5 style8 s">35.913  , -111.906  </td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6605/" title="">Brushy Mountain/Buskirk Prescribed Burn</a></td>
+            <td class="column1 style3 s">Prescribed Fire</td>
+            <td class="column2 style2 s">Arizona, USA</td>
+            <td class="column3 style3 s">28 Acres</td>
+            <td class="column4 style3 s">7 days ago</td>
+            <td class="column5 style8 s">37.833  , -80.229  </td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6570/" title="">Taboose Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style3 s">Arizona, USA</td>
+            <td class="column3 style2 s">10296 Acres</td>
+            <td class="column4 style4 n">11/7/2019</td>
+            <td class="column5 style8 s">37.034  , -118.345  </td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6658/" title="">Ranch Fire</a></td>
+            <td class="column1 style3 s">Wildfire</td>
+            <td class="column2 style2 s">California, USA</td>
+            <td class="column3 style3 s">0 Acres</td>
+            <td class="column4 style5 n">11/5/2019</td>
+            <td class="column5 style8 s">40.04  , -122.609  </td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6592/" title="">Decker Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style3 s">California, USA</td>
+            <td class="column3 style2 s">8959 Acres</td>
+            <td class="column4 style4 n">11/2/2019</td>
+            <td class="column5 style8 s">38.409  , -106.004  </td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6622/" title="">Caples Fire</a></td>
+            <td class="column1 style3 s">Wildfire</td>
+            <td class="column2 style2 s">California, USA</td>
+            <td class="column3 style3 s">3435 Acres</td>
+            <td class="column4 style5 n">11/1/2019</td>
+            <td class="column5 style8 s">38.724  , -120.145  </td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6288/" title="">San Juan NF Prescribed Fire Program</a></td>
+            <td class="column1 style2 s">Prescribed Fire</td>
+            <td class="column2 style3 s">California, USA</td>
+            <td class="column3 style2 s">0 Acres</td>
+            <td class="column4 style4 n">11/1/2019</td>
+            <td class="column5 style8 s">37.279  , -107.882  </td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6527/" title="">Middle Mamm Fire</a></td>
+            <td class="column1 style3 s">Wildfire</td>
+            <td class="column2 style3 s">California, USA</td>
+            <td class="column3 style3 s">1235 Acres</td>
+            <td class="column4 style5 n">10/31/2019</td>
+            <td class="column5 style8 s">39.369  , -107.788  </td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6654/" title="">Molino Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style2 s">California, USA</td>
+            <td class="column3 style2 s">540 Acres</td>
+            <td class="column4 style4 n">10/31/2019</td>
+            <td class="column5 style8 s">32.328  , -110.704  </td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6475/" title="">Ikes Fire</a></td>
+            <td class="column1 style3 s">Wildfire</td>
+            <td class="column2 style3 s">California, USA</td>
+            <td class="column3 style3 s">16416 Acres</td>
+            <td class="column4 style5 n">10/29/2019</td>
+            <td class="column5 style8 s">36.349  , -112.285  </td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6647/" title="">Cow Creek Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style3 s">California, USA</td>
+            <td class="column3 style2 s">859 Acres</td>
+            <td class="column4 style4 n">10/28/2019</td>
+            <td class="column5 style8 s">38.113  , -107.601  </td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/4648/" title="">Slash Pile Burning 2019</a></td>
+            <td class="column1 style3 s">Prescribed Fire</td>
+            <td class="column2 style2 s">California, USA</td>
+            <td class="column3 style3 s">0 Acres</td>
+            <td class="column4 style5 n">10/25/2019</td>
+            <td class="column5 style8 s">40.559  , -105.086  </td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6653/" title="">Kincade Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style3 s">California, USA</td>
+            <td class="column3 style2 s">0 Acres</td>
+            <td class="column4 style4 n">10/24/2019</td>
+            <td class="column5 style8 s">38.796  , -122.767  </td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6645/" title="">Hunter Fire</a></td>
+            <td class="column1 style3 s">Wildfire</td>
+            <td class="column2 style2 s">California, USA</td>
+            <td class="column3 style3 s">1495 Acres</td>
+            <td class="column4 style5 n">10/24/2019</td>
+            <td class="column5 style8 s">40.897  , -116.097  </td>
+          </tr>
+          <tr class="row19">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6558/" title="">Fishhawk Fire</a></td>
+            <td class="column1 style2 s">Wildfire</td>
+            <td class="column2 style2 s">California, USA</td>
+            <td class="column3 style2 s">11171 Acres</td>
+            <td class="column4 style4 n">10/24/2019</td>
+            <td class="column5 style8 s">44.377  , -109.881  </td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6198/" title="">Blue Ridge Prescribed Burn</a></td>
+            <td class="column1 style3 s">Prescribed Fire</td>
+            <td class="column2 style3 s">Nevada, USA</td>
+            <td class="column3 style3 s">0 Acres</td>
+            <td class="column4 style5 n">10/9/2019</td>
+            <td class="column5 style8 s">40.041  , -106.089  </td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6245/" title="">Sherman Prescribed Burn</a></td>
+            <td class="column1 style2 s">Prescribed Fire</td>
+            <td class="column2 style2 s">New Mexico, USA</td>
+            <td class="column3 style2 s">489 Acres</td>
+            <td class="column4 style4 n">10/4/2019</td>
+            <td class="column5 style9 s">36.583  , -118.754  </td>
+          </tr>
+          <tr class="row22">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6289/" title="">Wallowa-Whitman 2019 Prescribed Fire</a></td>
+            <td class="column1 style2 s">Prescribed Fire</td>
+            <td class="column2 style7 s">State</td>
+            <td class="column3 style2 s">0 Acres</td>
+            <td class="column4 style4 n">10/2/2019</td>
+            <td class="column5 style8 s">44.773  , -117.83  </td>
+          </tr>
+          <tr class="row23">
+            <td class="column0 style2 s"><a href="https://inciweb.nwcg.gov/incident/6612/" title="">Left Hand Fire - BAER</a></td>
+            <td class="column1 style3 s">Burned Area Emergency Response</td>
+            <td class="column2 style3 s">Washington, USA</td>
+            <td class="column3 style3 s">0 Acres</td>
+            <td class="column4 style5 n">10/1/2019</td>
+            <td class="column5 style8 s">46.933  , -120.993  </td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
